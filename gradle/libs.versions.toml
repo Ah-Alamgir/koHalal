@@ -1,10 +1,14 @@
 [versions]
 agp = "8.9.2"
+barcodeScanning = "17.3.0"
+cameraCore = "1.4.2"
+kmpViewmodelCore = "0.15.0"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
+kotlinxCoroutinesCore = "1.9.0-RC.2"
 lifecycleRuntimeKtx = "2.8.7"
 lifecycleViewmodelCompose = "2.8.7"
 activityCompose = "1.10.1"
@@ -13,9 +17,24 @@ generativeai = "0.9.0"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 googleGmsGoogleServices = "4.4.2"
 firebaseDatabase = "21.0.0"
+lifecycleViewmodelComposeVersion = "2.7.0"
+navigationCompose = "2.9.0"
+ui = "1.8.0"
+uiToolingPreview = "1.8.0"
+material3 = "1.8.0"
+kotlinxSerializationJson = "1.7.3"
+firebaseDatabaseVersion = "2.1.0"
 
 [libraries]
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCore" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
+androidx-camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "cameraCore" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCore" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraCore" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-compose-v270 = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelComposeVersion" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -32,6 +51,13 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+kmp-viewmodel-core = { module = "com.rickclephas.kmp:kmp-viewmodel-core", version.ref = "kmpViewmodelCore" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+ui = { group = "org.jetbrains.compose.ui", name = "ui", version.ref = "ui" }
+ui-tooling-preview = { group = "org.jetbrains.compose.ui", name = "ui-tooling-preview", version.ref = "uiToolingPreview" }
+material3 = { group = "org.jetbrains.compose.material3", name = "material3", version.ref = "material3" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+gitlive-firebase-database = { group = "dev.gitlive", name = "firebase-database", version.ref = "firebaseDatabaseVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

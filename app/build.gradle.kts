@@ -55,6 +55,11 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.generativeai)
     implementation(libs.firebase.database)
+    implementation(libs.ui)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.material3)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.gitlive.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,4 +67,20 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidx.navigation.compose)
+
+    // build.gradle (app module)
+    dependencies {
+        implementation(libs.androidx.camera.core)
+        implementation(libs.androidx.camera.camera2)
+        implementation(libs.androidx.camera.lifecycle)
+        implementation(libs.androidx.camera.view)
+        implementation(libs.androidx.camera.extensions)
+
+        // MLKit Barcode Scanning
+        implementation(libs.barcode.scanning)
+        implementation(libs.kotlinx.coroutines.core)
+        implementation(libs.kmp.viewmodel.core)
+    }
+
 }

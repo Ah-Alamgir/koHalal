@@ -7,7 +7,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+
+import androidx.navigation.compose.rememberNavController
 import com.tu.kohalal.ui.theme.KoHalalTheme
+import com.tu.kohalal.ui.theme.Shared.Navgat.Navigate
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +22,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    BakingScreen()
+//                    BakingScreen()
+                    val navController = rememberNavController()
+                    Navigate(navController)
                 }
             }
         }
